@@ -20,7 +20,7 @@ public class ShipController : MonoBehaviour
    
         foreach(ShipEngine engine in _engines)
         {
-            engine.Init(controlInput,rb,thrustForce);
+            engine.Init(controlInput,rb,thrustForce/_engines.Count);
         }
     }
 

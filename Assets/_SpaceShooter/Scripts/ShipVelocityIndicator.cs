@@ -12,6 +12,6 @@ public class ShipVelocityIndicator : MonoBehaviour
        currentVelocity= rb.velocity;
       float velocityAngle =  Vector3.Angle(transform.forward, currentVelocity.normalized);
     
-        Debug.Log("Ship velocity = " +rb.velocity +" " + velocityAngle);
+        Debug.Log("Ship velocity = " +rb.velocity.magnitude );
     }
 }
